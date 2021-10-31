@@ -14,11 +14,11 @@ RUN chmod 777 /usr/src/app
 
 # install required packages
 RUN apt-get -y update && apt-get -y upgrade && \
-    apt-get install -y software-properties-common && \
-    aria2 jq pv gcc g++ \
-    mediainfo apt install mkvtoolnix ffmpeg\
+    apt-get install -y software-properties-common aria2 && \
+    jq pv gcc g++ ffmpeg nginx \
+    mediainfo mkvtoolnix \
     neofetch python3-dev git bash build-essential nodejs npm ruby \
-    locales python-lxml qbittorrent-nox nginx gettext-base xz-utils \
+    locales python-lxml qbittorrent-nox gettext-base xz-utils \
     p7zip-full p7zip-rar rar unrar zip unzip lshw \
     g++ gcc automake autoconf libtool libcurl4-openssl-dev \
     qt5-default libsodium-dev libssl-dev libcrypto++-dev libc-ares-dev \
